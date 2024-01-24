@@ -15,22 +15,32 @@
                 PHP Badwords
                 </h1>
             </div>
-            <div class="col-12">
+            <form action="dashboard.php" method="GET">
+                <div class="row">
 
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Inserisci il tuo testo</label>
-                    <textarea class="form-control" id="my-text" rows="3" required></textarea>
+                    <div class="col-12">
+        
+                        <div class="mb-3">
+                            <label class="form-label">Inserisci il tuo testo</label>
+                            <textarea class="form-control" id="my-text" name="text" rows="3" required></textarea>
+                        </div>
+        
+                    </div>
+                    
+                    <div class="col-12">
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Inserisci la parola da censurare</label>
+                            <textarea class="form-control" id="censured-word" name="bad_word" rows="3" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-sm btn-success">Invia</button>
+                    </div>
                 </div>
 
-            </div>
-            
-            <div class="col-12">
-                
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Inserisci la parola da censurare</label>
-                    <textarea class="form-control" id="censured-word" rows="3" required></textarea>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
 </body>
